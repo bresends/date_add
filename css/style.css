@@ -87,7 +87,7 @@ no Google Chrome
 .card__button {
   border-radius: 0.25rem;
   margin-top: 1rem;
-  min-height: 2.5rem;
+  min-height: 3rem;
   background-color: hsl(246, 70%, 40%);
   color: white;
   font-weight: 500;
