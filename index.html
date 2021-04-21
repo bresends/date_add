@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Date Add</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav>
-      <i> <Ícone> </i>
-      <h1>.Devisio</h1>
+    <nav class="nav">
+      <img src="assets/logo.svg" alt="logo" class="nav__logo">
+      <h1 class="nav__title">.Devisio</h1>
     </nav>
 
     <main>
@@ -26,9 +27,10 @@
           />
 
           <label for="qtd-dias">Qtd de Dias:</label><br />
-          <input type="number" list="qtd-dias" value="15"/>
+          <input type="number" list="qtd-dias" placeholder="15 dias"/>
           <datalist id="qtd-dias">
             <option>10</option>
+            <option>15</option>
             <option>20</option>
             <option>30</option>
           </datalist>
