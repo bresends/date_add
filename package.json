@@ -1,0 +1,23 @@
+{
+  "name": "date_add",
+  "version": "1.0.0",
+  "description": "Site com funcionalidade de aumentar um número de dias a uma data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bresends/date_add.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bresends/date_add/issues"
+  },
+  "homepage": "https://github.com/bresends/date_add#readme",
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

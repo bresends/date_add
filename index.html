@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Add</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <i> <Ícone> </i>
+      <h1>.Devisio</h1>
+    </nav>
+
+    <main>
+      <div class="card">
+        <h1>Date Add</h1>
+
+        <form action="">
+          <label for="inicio">Início:</label><br />
+          <input
+          type="date"
+          id="inicio"
+          name="inicio"
+          />
+
+          <label for="qtd-dias">Qtd de Dias:</label><br />
+          <input type="number" list="qtd-dias" value="15"/>
+          <datalist id="qtd-dias">
+            <option>10</option>
+            <option>20</option>
+            <option>30</option>
+          </datalist>
+
+          <label for="retorno">Retorno:</label><br />
+          <input
+            type="date"
+            id="retorno"
+            name="retorno"
+          />
+
+          <input type="submit" value="Copiar"></input>
+
+        </form>
+      </div>
+    </main>
+    <footer>
+        <p>&copy; .Devisio - Todos os direitos reservados</p>
+    </footer>
+  </body>
+</html>
