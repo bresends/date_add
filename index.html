@@ -16,18 +16,18 @@
 
     <main>
       <div class="card">
-        <h1>Date Add</h1>
+        <h1 class="card__title">Date Add</h1>
 
-        <form action="">
-          <label for="inicio">Início:</label><br />
+        <form action="" class="card__form">
+          <label class="card__label" for="inicio">Início: </label>
           <input
           type="date"
           id="inicio"
-          name="inicio"
+          name="inicio" class="card__input card__input--com-calendario"
           />
 
-          <label for="qtd-dias">Qtd de Dias:</label><br />
-          <input type="number" list="qtd-dias" placeholder="15 dias"/>
+          <label class="card__label" for="qtd-dias">Qtd de Dias:</label>
+          <input type="number" list="qtd-dias" placeholder="15 dias" class="card__input" min="1"/>
           <datalist id="qtd-dias">
             <option>10</option>
             <option>15</option>
@@ -35,20 +35,21 @@
             <option>30</option>
           </datalist>
 
-          <label for="retorno">Retorno:</label><br />
+          <label class="card__label" for="retorno">Retorno:</label>
           <input
             type="date"
             id="retorno"
-            name="retorno"
+            disabled
+            name="retorno" class="card__input card__input--com-calendario"
           />
 
-          <input type="submit" value="Copiar"></input>
+          <input type="submit" value="Copiar" class="card__button"></input>
 
         </form>
       </div>
     </main>
-    <footer>
-        <p>&copy; .Devisio - Todos os direitos reservados</p>
+    <footer class="footer">
+        <p class="footer__paragraph">&copy; .Devisio - Todos os direitos reservados</p>
     </footer>
   </body>
 </html>
