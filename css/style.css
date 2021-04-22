@@ -92,7 +92,7 @@ no Google Chrome
   font-weight: 400;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
   body {
     display: grid;
     grid-template-columns: 1fr;
@@ -111,7 +111,7 @@ no Google Chrome
     padding: 1rem 2rem;
   }
 
-  .nav__logo{
+  .nav__logo {
     width: 2rem;
   }
 
@@ -129,18 +129,26 @@ no Google Chrome
     margin: 0;
     font-size: 4.5rem;
     font-weight: 600;
-    color: #4E4E4E;
+    color: #4e4e4e;
+    margin-bottom: 1rem;
   }
 
-  .card__input{
+  .card .card__label{
+    font-weight: 600;
+  }
+
+  .card__input {
     border: 1px solid #979797;
+    color: hsl(0, 0%, 45%);
+    min-height: 3rem;
   }
 
-  .card__button{
-    background-color: #5052E2;
+  .card__button {
+    background-color: #5052e2;
+    min-height: 56px;
   }
 
-  .card__label{
+  .card__label {
     font-weight: 400;
   }
 
