@@ -1,7 +1,9 @@
 import Dia from './Dia.js';
+import Mes from './Mes.js';
 
-// Main 
+// Main
 {
-  const dia = new Dia();
-  console.log('Data:', dia.format('DD, MMM, (DDDD/WW), YYYY'));
+  // const dia = new Dia();
+  // console.log('Data:', dia.format('DD, MMM, (DDDD/WW), YYYY'));
+  const mes = new Mes();
 }
