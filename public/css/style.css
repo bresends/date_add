@@ -133,7 +133,7 @@ no Google Chrome
     margin-bottom: 1rem;
   }
 
-  .card .card__label{
+  .card .card__label {
     font-weight: 600;
   }
 
@@ -157,4 +157,128 @@ no Google Chrome
     font-size: 1rem;
     padding-bottom: 1rem;
   }
+}
+
+/* Date Picker */
+/* https://www.hongkiat.com/blog/jquery-ui-datepicker/ */
+
+.ui-datepicker {
+  background-color: white;
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.ui-datepicker {
+  min-width: 390px;
+  max-width: 100vw;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ui-datepicker a {
+  text-decoration: none;
+}
+
+.ui-datepicker table {
+  width: 100%;
+}
+
+.ui-datepicker-header {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem;
+  background-color: #5052e2;
+}
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  font-size: small;
+  cursor: pointer;
+  font-size: 0pt;
+}
+
+.ui-datepicker-next {
+  transform: scaleX(-1);
+}
+
+.ui-datepicker-prev::before,
+.ui-datepicker-next::before {
+  content: url('../assets/akar-icons_arrow-left.svg');
+  background: #4e4e4e;
+}
+
+.ui-datepicker-next {
+  order: 3;
+}
+
+.ui-datepicker thead {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #bbb;
+}
+
+.ui-datepicker th {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+  color: #666666;
+}
+
+.ui-datepicker tbody td {
+  padding: 0;
+  border-right: 1px solid #bbb;
+}
+
+.ui-datepicker tbody td:last-child {
+  border-right: 0px;
+}
+
+.ui-datepicker tbody tr {
+  border-bottom: 1px solid #bbb;
+}
+.ui-datepicker tbody tr:last-child {
+  border-bottom: 0px;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding: 0.25rem 0;
+  color: #666666;
+}
+.ui-datepicker-calendar .ui-state-default {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #ededed),
+    color-stop(100%, #dedede)
+  );
+  box-shadow: inset 1px 1px 0px 0px rgba(250, 250, 250, 0.5);
+}
+.ui-datepicker-unselectable .ui-state-default {
+  background: #f4f4f4;
+  color: #b4b3b3;
+}
+
+.ui-datepicker-calendar .ui-state-hover {
+  background: #f7f7f7;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+  background: #969696;
+  color: white;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ui-datepicker-calendar td:first-child .ui-state-active {
+  width: 29px;
+  margin-left: 0;
+}
+.ui-datepicker-calendar td:last-child .ui-state-active {
+  width: 29px;
+  margin-right: 0;
 }

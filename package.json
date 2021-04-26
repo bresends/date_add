@@ -19,5 +19,8 @@
   "homepage": "https://github.com/bresends/date_add#readme",
   "devDependencies": {
     "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.9"
   }
 }
