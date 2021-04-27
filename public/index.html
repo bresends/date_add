@@ -13,17 +13,7 @@
     <script type='module' src="app.js"  defer></script>
 
     <script>
-      $(function() {
-      $( "#dataInicio" ).datepicker({
-        dateFormat: 'dd/mm/yy',
-        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
-        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
-        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
-        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
-        todayHighlight: true
-      });
-      });
+      
     </script>
 
   </head>
@@ -43,18 +33,22 @@
           type="text"
           id="dataInicio"
           name="inicio" class="card__input card__input--com-calendario"
+          placeholder="Escolha uma data"
+          required
           />
 
           <label class="card__label" for="qtd-dias">Qtd de Dias:</label>
-          <input type="number" list="qtd-dias" placeholder="15 dias" class="card__input" min="1"/>
-          <datalist id="qtd-dias">
+          
+          <input type="number" list="opcoes-dias" id="qtd-dias" placeholder="Entre com a quantidade de dias" class="card__input" min="1" required/>
+          
+          <datalist id="opcoes-dias">
             <option>10</option>
             <option>15</option>
             <option>20</option>
             <option>30</option>
           </datalist>
 
-          <label class="card__label" for="retorno">Retorno:</label>
+          <label class="card__label" for="retorno">Término:</label>
           <input
             type="text"
             id="retorno"
@@ -62,7 +56,7 @@
             name="retorno" class="card__input card__input--com-calendario"
           />
 
-          <input type="submit" value="Copiar" class="card__button"></input>
+          <input type="submit" value="Copiar" class="card__button" id="btn-copiar"></input>
 
         </form>
       </div>
