@@ -80,21 +80,26 @@ function addDays(date: string, days: number) {
   return dataFinal;
 }
 
-function copyToClipboard(e: Event) {
+function copyDate(e: Event) {
   e.preventDefault();
-
-  navigator.permissions.query({ name: 'clipboard-write' }).then((result) => {
-    if (result.state == 'granted' || result.state == 'prompt') {
-      /* write to the clipboard now */
-    }
-  });
+  const conteudo = outputDate.value;
+  if (conteudo && conteudo != 'Invalid Date') {
+    navigator.clipboard.writeText(conteudo);
+    btnCopiar.classList.toggle('copiado');
+    btnCopiar.value = 'Copiado para Área de Transferência';
+    setTimeout(() => {
+      btnCopiar.value = 'Copiar';
+      btnCopiar.classList.toggle('copiado');
+    }, 2000);
+  } else {
+    btnCopiar.classList.toggle('erro');
+    btnCopiar.value = 'Insira uma data e quantidade de dias';
+    setTimeout(() => {
+      btnCopiar.value = 'Copiar';
+      btnCopiar.classList.toggle('erro');
+    }, 2000);
+  }
 }
 
 qtdDias.addEventListener('input', retornarData);
-
-btnCopiar.addEventListener('click', (e: Event) => {
-  e.preventDefault();
-  const conteudo = outputDate.value;
-  console.log(conteudo);
-  conteudo && navigator.clipboard.writeText(conteudo);
-});
+btnCopiar.addEventListener('click', copyDate);
