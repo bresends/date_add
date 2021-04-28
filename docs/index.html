@@ -10,6 +10,7 @@
     <link rel='icon' href='assets/favicon.ico' type='image/x-icon'/>
     <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="https://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" defer></script>
     <script type='module' src="app.js"  defer></script>
 
     <script>
@@ -51,8 +52,8 @@
           <label class="card__label" for="retorno">Término:</label>
           <input
             type="text"
-            id="retorno"
-            disabled
+            id="data-retorno"
+            readonly
             name="retorno" class="card__input card__input--com-calendario"
           />
 

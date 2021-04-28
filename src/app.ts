@@ -46,7 +46,7 @@ $(function () {
 });
 
 const inputDate = document.querySelector('#dataInicio')! as HTMLInputElement;
-const outputDate = document.querySelector('#retorno')! as HTMLInputElement;
+const outputDate = document.querySelector('#data-retorno')! as HTMLInputElement;
 const qtdDias = document.querySelector('#qtd-dias')! as HTMLInputElement;
 const btnCopiar = document.querySelector('#btn-copiar')! as HTMLInputElement;
 
@@ -80,4 +80,21 @@ function addDays(date: string, days: number) {
   return dataFinal;
 }
 
+function copyToClipboard(e: Event) {
+  e.preventDefault();
+
+  navigator.permissions.query({ name: 'clipboard-write' }).then((result) => {
+    if (result.state == 'granted' || result.state == 'prompt') {
+      /* write to the clipboard now */
+    }
+  });
+}
+
 qtdDias.addEventListener('input', retornarData);
+
+btnCopiar.addEventListener('click', (e: Event) => {
+  e.preventDefault();
+  const conteudo = outputDate.value;
+  console.log(conteudo);
+  conteudo && navigator.clipboard.writeText(conteudo);
+});

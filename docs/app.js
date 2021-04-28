@@ -46,7 +46,7 @@ $(function () {
     });
 });
 const inputDate = document.querySelector('#dataInicio');
-const outputDate = document.querySelector('#retorno');
+const outputDate = document.querySelector('#data-retorno');
 const qtdDias = document.querySelector('#qtd-dias');
 const btnCopiar = document.querySelector('#btn-copiar');
 function retornarData(e) {
@@ -69,4 +69,18 @@ function addDays(date, days) {
     dataFinal.setDate(dataInicial.getDate() + days - 1);
     return dataFinal;
 }
+function copyToClipboard(e) {
+    e.preventDefault();
+    navigator.permissions.query({ name: 'clipboard-write' }).then((result) => {
+        if (result.state == 'granted' || result.state == 'prompt') {
+            /* write to the clipboard now */
+        }
+    });
+}
 qtdDias.addEventListener('input', retornarData);
+btnCopiar.addEventListener('click', (e) => {
+    e.preventDefault();
+    const conteudo = outputDate.value;
+    console.log(conteudo);
+    conteudo && navigator.clipboard.writeText(conteudo);
+});
