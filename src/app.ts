@@ -1,3 +1,11 @@
+import {
+  addDays,
+  inputDate,
+  outputDate,
+  btnCopiar,
+  qtdDias,
+} from './utils';
+
 $(function () {
   $('#dataInicio').datepicker({
     dateFormat: 'dd/mm/yy',
@@ -41,14 +49,11 @@ $(function () {
       'Nov',
       'Dez',
     ],
-    todayHighlight: true,
   });
 });
 
-const inputDate = document.querySelector('#dataInicio')! as HTMLInputElement;
-const outputDate = document.querySelector('#data-retorno')! as HTMLInputElement;
-const qtdDias = document.querySelector('#qtd-dias')! as HTMLInputElement;
-const btnCopiar = document.querySelector('#btn-copiar')! as HTMLInputElement;
+
+qtdDias.addEventListener('input', retornarData);
 
 function retornarData(e: Event) {
   e.preventDefault();
@@ -58,27 +63,7 @@ function retornarData(e: Event) {
   ).toLocaleDateString();
 }
 
-/**
- * Recebe uma data no formato XX/XX/XXXX
- * Transforma essa data em uma lista e cria nova data a partir dela
- * Cria uma copia dessa data no formato de milisegundos (Number)
- * Pega o número do dia no mês da data inicial
- * @param date -> Data no formato XX/XX/XXXX
- * @param days -> Quantidade de dias a serem somados
- * @returns Date
- */
-
-function addDays(date: string, days: number) {
-  const formatedDateList = date.split('/');
-  const dataInicial = new Date(
-    Number(formatedDateList[2]),
-    Number(formatedDateList[1]) - 1,
-    Number(formatedDateList[0])
-  );
-  const dataFinal = new Date(Number(dataInicial));
-  dataFinal.setDate(dataInicial.getDate() + days - 1);
-  return dataFinal;
-}
+btnCopiar.addEventListener('click', copyDate);
 
 function copyDate(e: Event) {
   e.preventDefault();
@@ -100,6 +85,3 @@ function copyDate(e: Event) {
     }, 2000);
   }
 }
-
-qtdDias.addEventListener('input', retornarData);
-btnCopiar.addEventListener('click', copyDate);
