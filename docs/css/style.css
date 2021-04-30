@@ -135,6 +135,7 @@ no Google Chrome
     border-radius: 4px;
     color: hsl(0, 0%, 44%);
     padding: 2rem 6rem 6rem 6rem;
+    padding-bottom: clamp(1rem, 5vw, 6rem);
   }
 
   .card__title {
