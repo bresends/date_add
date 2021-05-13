@@ -1,10 +1,4 @@
-import {
-  addDays,
-  inputDate,
-  outputDate,
-  btnCopiar,
-  qtdDias,
-} from './utils';
+import { addDays, inputDate, outputDate, btnCopiar, qtdDias } from './utils';
 
 $(function () {
   $('#dataInicio').datepicker({
@@ -49,14 +43,17 @@ $(function () {
       'Nov',
       'Dez',
     ],
+    onSelect: function returnDate() {
+      if (qtdDias.value) {
+        retornarData()
+      }
+    },
   });
 });
 
-
 qtdDias.addEventListener('input', retornarData);
 
-function retornarData(e: Event) {
-  e.preventDefault();
+function retornarData() {
   outputDate.value = addDays(
     inputDate.value,
     Number(qtdDias.value)
