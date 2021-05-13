@@ -9,25 +9,18 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css" />
     <link rel='icon' href='assets/favicon.ico' type='image/x-icon'/>
-    <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
-    <script src="https://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
-    <script type='module' src="bundle.js"  defer></script>
-
-    <script>
-      
-    </script>
-
+    
   </head>
   <body>
     <nav class="nav">
       <img src="assets/logo.svg" alt="logo" class="nav__logo">
       <h1 class="nav__title">.Devisio</h1>
     </nav>
-
+    
     <main>
       <div class="card">
         <h1 class="card__title">Date Add</h1>
-
+        
         <form action="" class="card__form">
           <label class="card__label" for="inicio">Início: </label>
           <input
@@ -37,7 +30,7 @@
           placeholder="Escolha uma data"
           required
           />
-
+          
           <label class="card__label" for="qtd-dias">Qtd de Dias:</label>
           
           <input type="number" list="opcoes-dias" id="qtd-dias" placeholder="Entre com a quantidade de dias" class="card__input" min="1" required/>
@@ -48,23 +41,27 @@
             <option>20</option>
             <option>30</option>
           </datalist>
-
+          
           <label class="card__label" for="retorno">Término:</label>
           <input
-            type="text"
-            id="data-retorno"
-            readonly
-            name="retorno" class="card__input card__input--com-calendario"
+          type="text"
+          id="data-retorno"
+          readonly
+          name="retorno" class="card__input card__input--com-calendario"
           />
-
+          
           <input type="submit" value="Copiar" class="card__button" id="btn-copiar"></input>
-
+          
         </form>
       </div>
     </main>
     <footer class="footer">
-        <p class="footer__paragraph">&copy; .Devisio - Todos os direitos reservados</p>
+      <p class="footer__paragraph">&copy; .Devisio - Todos os direitos reservados</p>
     </footer>
-
+    
+    <script src="https://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script type='text/JavaScript' src="bundle.js"></script>
   </body>
-</html>
+  </html>
+  

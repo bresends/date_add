@@ -45,7 +45,7 @@ $(function () {
     ],
     onSelect: function returnDate() {
       if (qtdDias.value) {
-        retornarData()
+        retornarData();
       }
     },
   });
