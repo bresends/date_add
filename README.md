@@ -18,7 +18,7 @@
   <img alt="GitHub" src="https://img.shields.io/github/license/bresends/date_add">
 </p>
 
-![Demo](https://i.imgur.com/yX0pHXt.gif)
+![Demo](https://i.imgur.com/AZQYP98.gif)
 
 <p align="center">
   <a href="#hammer_and_wrench-Stack">:hammer_and_wrench: <strong>Stack</strong> </a> |
