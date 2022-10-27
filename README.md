@@ -4,7 +4,7 @@
 </h1>
 
 <h4 align="center">
-  Projeto criado para 
+  Projeto criado para trabalhar com datas. Uma entrada é escolhida e o app faz o cálculo da data posterior. 
 </h4>
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/bresends/date_add">
@@ -12,10 +12,10 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/bresends/date_add">
 
   <img alt="Repository size" src="https://img.shields.io/github/languages/code-size/bresends/date_add">
-  <a href="https://github.com/bresends/pousada_secreta/commits/master">
+  <a href="https://github.com/bresends/date_add/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/bresends/date_add">
   </a>
-  <img alt="GitHub" src="https://img.shields.io/github/license/bresends/pousada_secreta">
+  <img alt="GitHub" src="https://img.shields.io/github/license/bresends/date_add">
 </p>
 
 ![Demo](https://i.imgur.com/yX0pHXt.gif)
@@ -29,16 +29,19 @@
 
 
 # :hammer_and_wrench: Stack
-- **HTML**
-- **SCSS**
+- **Typescript**
+- **Webpack**
+- **Jquery**
+
+# :dart: Motivação
+Em uma tarefa no trabalho era necessário calcular a data de final das férias dos colaboradores da instituição para publicação oficial. Esse processo era feito de forma manual, o que ocasionava diversos erros e retorno dos processos para retificação. No intuito de resolver esse problema a ferramenta foi criada, dando a possibilidade de automação e garantia de exatidão nos documentos produzidos. 
 
 # :dart: Desafios
-- Aprender lidar com layout de páginas responsivas.
-- Utilização de tags HTML de forma semântica para Search Engine Optimization (SEO).
-- Fazer a build do SCSS para CSS.
-- Controlar o tamanho de imagens em diferentes tamanhos de tela.
-- Lidar com Iframes (para incorporação do Google Maps na página). 
-- Fazer deploy de uma página para o Github Pages.
+- Aprender lidar com datas.
+- Construção de um calendário para escolha da data inicial.
+- Início do aprendizado com tipagem do Typescript.
+- Implementação de inserção de informações do browser para a Área de Transferência.
+- Transformação do bundo de TS para JS com Webpack. 
 
 # :rocket: Deploy
 ### Github Pages
