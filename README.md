@@ -22,6 +22,7 @@
 
 <p align="center">
   <a href="#hammer_and_wrench-Stack">:hammer_and_wrench: <strong>Stack</strong> </a> |
+  <a href="#1st_place_medal-Motivação">:1st_place_medal: <strong>Motivação</strong> </a> |
   <a href="#dart-Desafios">:dart:<strong>Desafios</strong></a> |
   <a href="#rocket-Deploy">:rocket:<strong>Deploy</strong></a> |
   <a href="#bookmark_tabs-Licença">:bookmark_tabs:<strong>Licença</strong></a>
@@ -33,7 +34,7 @@
 - **Webpack**
 - **Jquery**
 
-# :dart: Motivação
+# :1st_place_medal: Motivação
 Em uma tarefa no trabalho era necessário calcular a data de final das férias dos colaboradores da instituição para publicação oficial. Esse processo era feito de forma manual, o que ocasionava diversos erros e retorno dos processos para retificação. No intuito de resolver esse problema a ferramenta foi criada, dando a possibilidade de automação e garantia de exatidão nos documentos produzidos. 
 
 # :dart: Desafios
