@@ -42,7 +42,7 @@ Em uma tarefa no trabalho era necessário calcular a data de final das férias d
 - Construção de um calendário para escolha da data inicial.
 - Início do aprendizado com tipagem do Typescript.
 - Implementação de inserção de informações do browser para a Área de Transferência.
-- Transformação do bundo de TS para JS com Webpack. 
+- Transformação do bundle de TS para JS com Webpack. 
 
 # :rocket: Deploy
 ### Github Pages
